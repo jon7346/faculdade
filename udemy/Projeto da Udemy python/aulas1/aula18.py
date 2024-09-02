@@ -11,8 +11,8 @@ conducao3= True
 conducao4 = True 
 
 
-if condicao1: 
+if conducao1: 
     print ('Código para condição 1 ')
     print ('Código para condição 1 ')
-elif conficao2:
+elif conducao2:
     print ('Código para condição 2 ')

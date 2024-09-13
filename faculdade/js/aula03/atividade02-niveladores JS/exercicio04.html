@@ -1,0 +1,39 @@
+<!-- Um estudante deseja participar de uma competição de matemática. Para que sua inscrição seja
+aprovada, é necessário que o estudante tenha frequência maior ou igual a 80%. Será exibida a
+mensagem “Permitido” somente se a condição for satisfeita. Utilize funções. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+     var valor = 100 
+     var frequência = 0
+
+     function ObterValor(){
+        frequencia = document.getElementById('frequencia');
+     }
+     function Conta() {
+        ObterValor();
+      if (frequencia <= (80 ** valor)){
+     alert("o aluno não é permitido")
+    
+     }
+      else {
+        alert("permitido")
+      }
+     }
+    </script>
+    </head>
+    <body>
+    <p>
+       <label>frequência</label>
+       <input type = "text" id = 'frequencia' > 
+    </p>
+    <p>
+       <label>analizar<label>
+       <input type = 'button' onclick="Conta()">
+
+    </p>
+    </body>
+</html>

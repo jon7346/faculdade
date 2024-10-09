@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Números</title>
+    <script>
+        function listarNumeros() {
+            // Solicita ao usuário um número
+            let numero = parseInt(prompt("Digite um número:"));
+            let listaNumeros = [];
+
+            // Verifica se o número é válido
+            if (!isNaN(numero) && numero > 0) {
+                // Loop para adicionar números à lista
+                for (let i = 1; i <= numero; i++) {
+                    listaNumeros.push(i);
+                }
+                // Exibe a lista em um alert
+                alert("Números até " + numero + ": " + listaNumeros.join(", "));
+            } else {
+                alert("Por favor, insira um número válido maior que zero.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Lista de Números</h1>
+    <button onclick="listarNumeros()">Listar Números</button>
+</body>
+</html>

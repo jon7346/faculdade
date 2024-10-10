@@ -1,10 +1,8 @@
 function listar(){
-    var numero = 0;
-    let lista = []
-   numero = document.getElementById("numero");
-
+    var numero = document.getElementById('numero').value 
+    let resultado = '' 
    for (let i = 1 ; i < parseInt(numero) ; ++i){
-    lista.push(i)
+    resultado += i + ' ' 
    }
-   alert(lista.join(' ,'))
+  alert(resultado)
 }

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário</title>
+
+    <script type="text/javascript">
+
+        var valor1 = 0, valor2 = 0;
+
+        function ObterValores() {
+            valor1 = document.getElementById('valor1').value;
+            valor2 = document.getElementById('valor2').value;
+        }
+
+        function Multiplicar() {
+            ObterValores();
+
+            document.getElementById('resultado').value = valor1 * valor2;
+        }
+
+        function Subtrair() {
+            ObterValores();
+            document.getElementById('resultado ').value = valor1 - valor2
+
+        }
+
+        function dividir(){
+            ObterValores();
+            document.getElementById('resultado').value = valor1 / valor2
+
+        }
+        function somar(){
+            ObterValores();
+            document.getElementById('resultado').value = valor1 + valor2
+
+        }
+        function concatenar(){
+            var texto1 = document.getElementById ('nome').value
+            var texto2 = document.getElementById ('sobrenome').value
+
+            document.getElementById('nomecompleto').value = texto1 + ' ' + texto2
+        
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <p>
+            <label>Valor 1: </label>
+            <input type="text" id="valor1" />
+        </p>
+        <p>
+            <label>Valor 2: </label>
+            <input type="text" id="valor2" />
+        </p>
+        <p>
+            <label>Resultado: </label>
+            <input type="text" id="resultado" />
+        </p>
+        <p>
+            <input type="button" value="Multiplicar" onclick="Multiplicar()" />
+            <input type="button" value="Subtrair" onclick="Subtrair()" />
+            <input type="button" value="Somar" onclick="somar()" />
+            <input type="button" value="Dividir" onclick="dividir()" />
+        </p>
+
+        <hr />
+
+        <p>
+            <label>Nome: </label>
+            <input type="text" id="nome" onkeyup="concatenar()"/>
+        </p>
+        <p>
+            <label>Sobrenome: </label>
+            <input type="text" id="sobrenome"  onkeyup="concatenar()"/>
+        </p>
+        <p>
+            <label>Nome completo: </label>
+            <input type="text" id="nomecompleto" disabled/>
+        </p>
+        <p>
+            <label>Senha: </label>
+            <input type="password" id="senha" onchange= "alert('a senha foi alterada com sucesso') "/>
+        </p>
+
+
+    </form>
+
+</body>
+</html>

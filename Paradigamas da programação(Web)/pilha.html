@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            class Pilha {
+    constructor() {
+        this.itens = [];
+    }
+    push(elemento) {
+        this.itens.push(elemento);
+    }
+    pop() {
+        if (this.itens.length === 0) return "A pilha está vazia";
+        return this.itens.pop();
+    }
+    peek() {
+        return this.itens[this.itens.length - 1];
+    }
+}
+
+    const pilha = new Pilha();
+    pilha.push(10);
+    pilha.push(20);
+    console.log(pilha.peek()); // 20
+    console.log(pilha.pop()); // 20
+    console.log(pilha.pop()); // 10
+    console.log(pilha.pop()); // A pilha está vazia 
+
+
+        </script>
+    </head>
+</html>

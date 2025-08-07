@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bolha</title>
+    <script type="text/JavaScript">
+
+        function gerarDados(quantidade) {
+            /*criando um array de dados */
+            var containerDados = [];
+            /*criando um loop que adiciona numeros aleátorios até que a quantidade de numeros seja igual a inserida pelo usúario */
+            for (var i = 0; i<quantidade; i++){
+                //gerar números aleatórios com arrendondamento
+                containerDados[i] = Math.floor(Math.random() * quantidade);
+            
+            }
+            return containerDados;
+        }
+        var dados = gerarDados(1000);
+
+        
+
+
+
+
+    
+        function BubbleSort(){
+            //cria um array chamado elementos 
+            var elementos = [];
+            elementos = dados; //add dados gerados ao container
+
+            var temp;// cria uma variavel temp
+            
+            var inicioExecucao = performance.now(); //coletar dados gerado
+            for (var i=0; i<elementos.length - 1; i++){
+                //percorre todos os elementos
+                for (var ord=0; ord<elementos.length -1; ord++){
+                    //percorre cada caracteres dentro de uma varredura
+                    if  (elementos[ord] > elementos[ord + 1 ])
+                {
+                    //efetuar a troca 
+                    temp= elementos[ord + 1];
+                    elementos [ord + 1] = elementos[ord];
+                    elementos[ord] = temp;
+                }
+                
+                
+                
+                
+            
+            
+                }
+            }//fim varreduras
+
+            var fimExecucao = performance.now();
+            console.log("Tempo de execução: " + (fimExecucao - inicioExecucao) + 'ms');
+            //apresentar os dados
+            for (var item of elementos){
+                console.log(item);
+
+            }
+        
+
+        } //fim função BubbleSort
+
+
+
+
+
+
+
+
+
+    function BubbleSortOtimizado() {
+        var elementos = [];
+            elementos = dados; //add dados gerados ao container
+
+            var temp;
+            var inicioExecucao = performance.now(); //coletar dados gerado
+            for (var i=0; i<elementos.length - 1; i++){
+                //percorre todos os elementos
+                for (var ord=0; ord<elementos.length -1; ord++){
+                    //percorre cada caracteres dentro de uma varredura
+                    if  (elementos[ord] > elementos[ord + 1 ])
+                {
+                    //efetuar a troca 
+                    temp= elementos[ord + 1];
+                    elementos [ord + 1] = elementos[ord];
+                    elementos[ord] = temp;
+                }
+                
+                
+                
+                
+            
+            
+                }
+            }//fim varreduras
+
+            var fimExecucao = performance.now();
+            console.log("Tempo de execução: " + (fimExecucao - inicioExecucao) + 'ms');
+            //apresentar os dados
+            for (var item of elementos){
+                console.log(item);
+
+            }
+        // break = quebra a varredura
+    }
+    </script>
+</head>
+<body>
+    
+</body>

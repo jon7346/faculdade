@@ -1,0 +1,285 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green77\blue187;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang22 RESUMO DO JEAN \par
+\cf1\fs40 HTML (HyperText Markup Language)\cf0\fs22\par
+HTML \'e9 utilizado para estruturar p\'e1ginas web. Aqui est\'e3o algumas das tags mais comuns e como utiliz\'e1-las:\par
+\cf2\highlight3 Estrutura B\'e1sica\par
+<!DOCTYPE>: Define o tipo do documento.\par
+<html>: Elemento raiz de uma p\'e1gina HTML.\par
+<head>: Cont\'e9m metadados sobre o documento.\par
+<title>: Define o t\'edtulo da p\'e1gina.\par
+<meta>: Metadados sobre o documento (ex.: charset, viewport).\par
+\par
+Estrutura\'e7\'e3o de Conte\'fado\par
+<body>: Corpo do documento, onde o conte\'fado principal \'e9 inserido.\par
+<header>: Cabe\'e7alho de uma se\'e7\'e3o ou p\'e1gina.\par
+<footer>: Rodap\'e9 de uma se\'e7\'e3o ou p\'e1gina.\par
+<section>: Se\'e7\'e3o gen\'e9rica de um documento.\par
+<article>: Conte\'fado independente e isolado.\par
+<nav>: Se\'e7\'e3o de navega\'e7\'e3o.\par
+<aside>: Conte\'fado secund\'e1rio, como barras laterais.\par
+\par
+Texto e Formata\'e7\'e3o\par
+<h1> a <h6>: T\'edtulos, sendo <h1> o mais importante.\par
+<p>: Par\'e1grafo.\par
+<br>: Quebra de linha.\par
+<hr>: Linha horizontal.\par
+<blockquote>: Cita\'e7\'e3o em bloco.\par
+<pre>: Texto pr\'e9-formatado.\par
+<b>: Negrito.\par
+<i>: It\'e1lico.\par
+<u>: Sublinhado.\par
+<strong>: Forte \'eanfase (sem\'e2ntico).\par
+<em>: \'canfase (sem\'e2ntico).\par
+\par
+Listas\par
+<ul>: Lista n\'e3o ordenada.\par
+<ol>: Lista ordenada.\par
+<li>: Item de lista.\par
+<dl>: Lista de descri\'e7\'e3o.\par
+<dt>: Termo de descri\'e7\'e3o.\par
+<dd>: Defini\'e7\'e3o de descri\'e7\'e3o.\par
+\par
+Links e M\'eddia\par
+<a>: Hiperlink.\par
+<img>: Imagem.\par
+<audio>: Conte\'fado de \'e1udio.\par
+<video>: Conte\'fado de v\'eddeo.\par
+<source>: Fonte de m\'eddia para <audio> e <video>.\par
+<track>: Pistas de texto (legendas) para <video>.\par
+\par
+Tabelas\par
+<table>: Tabela.\par
+<tr>: Linha de tabela.\par
+<th>: Cabe\'e7alho de tabela.\par
+<td>: C\'e9lula de tabela.\par
+<thead>: Cabe\'e7alho de grupo de linhas.\par
+<tbody>: Corpo de grupo de linhas.\par
+<tfoot>: Rodap\'e9 de grupo de linhas.\par
+<caption>: Legenda da tabela.\par
+<colgroup>: Define um grupo de colunas.\par
+<col>: Define propriedades para colunas dentro de <colgroup>.\par
+\par
+Formul\'e1rios\par
+<form>: Formul\'e1rio.\par
+<input>: Entrada de dados.\par
+<textarea>: \'c1rea de texto.\par
+<button>: Bot\'e3o.\par
+<select>: Lista de sele\'e7\'e3o.\par
+<option>: Op\'e7\'e3o dentro de <select>.\par
+<label>: R\'f3tulo para um elemento de formul\'e1rio.\par
+<fieldset>: Grupo de elementos de formul\'e1rio.\par
+<legend>: Legenda para um <fieldset>.\par
+Sem\'e2ntica e Organiza\'e7\'e3o\par
+<div>: Divis\'e3o gen\'e9rica.\par
+<span>: Cont\'eainer gen\'e9rico para estiliza\'e7\'e3o.\par
+Multim\'eddia e Integra\'e7\'e3o\par
+<canvas>: Elemento gr\'e1fico para desenho.\par
+<iframe>: Quadro embutido (integrar outra p\'e1gina).\par
+<embed>: Conte\'fado embutido, como plug-ins.\par
+<object>: Cont\'eainer para objetos externos.\par
+<param>: Par\'e2metros para <object>.\par
+\cf0\highlight0\par
+\cf1\fs40 Pilha (Stack)\cf0\fs22\par
+Uma pilha \'e9 usada para armazenar e manipular dados de forma LIFO. Vamos ver um exemplo em JavaScript:\par
+\cf2\highlight3 class Pilha \{\par
+    constructor() \{\par
+        this.itens = [];\par
+    \}\par
+    push(elemento) \{\par
+        this.itens.push(elemento);\par
+    \}\par
+    pop() \{\par
+        if (this.itens.length === 0) return "A pilha est\'e1 vazia";\par
+        return this.itens.pop();\par
+    \}\par
+    peek() \{\par
+        return this.itens[this.itens.length - 1];\par
+    \}\par
+\}\par
+\par
+const pilha = new Pilha();\par
+pilha.push(10);\par
+pilha.push(20);\par
+console.log(pilha.peek()); // 20\par
+console.log(pilha.pop()); // 20\par
+console.log(pilha.pop()); // 10\par
+console.log(pilha.pop()); // A pilha est\'e1 vazia \par
+\par
+\cf1\highlight0\fs40 javascript \par
+\cf2\highlight3\fs22 Vari\'e1veis\par
+As vari\'e1veis s\'e3o usadas para armazenar dados que podem ser manipulados posteriormente no c\'f3digo.\par
+\par
+javascript\par
+let nome = "Jo\'e3o";\par
+const idade = 25;\par
+var cidade = "S\'e3o Paulo";\par
+Fun\'e7\'f5es\par
+Fun\'e7\'f5es s\'e3o blocos de c\'f3digo reutiliz\'e1veis que executam uma tarefa espec\'edfica.\par
+\par
+javascript\par
+function saudacao(nome) \{\par
+    return `Ol\'e1, $\{nome\}!`;\par
+\}\par
+\par
+const saudacao = nome => `Ol\'e1, $\{nome\}!`; // Fun\'e7\'e3o arrow\par
+Estruturas de Controle\par
+Estruturas de controle s\'e3o usadas para dirigir o fluxo de execu\'e7\'e3o do programa com base em condi\'e7\'f5es.\par
+\par
+javascript\par
+// If-else\par
+if (idade >= 18) \{\par
+    console.log("Voc\'ea \'e9 maior de idade.");\par
+\} else \{\par
+    console.log("Voc\'ea \'e9 menor de idade.");\par
+\}\par
+\par
+// Switch\par
+const dia = 3;\par
+switch (dia) \{\par
+    case 1:\par
+        console.log("Segunda-feira");\par
+        break;\par
+    case 2:\par
+        console.log("Ter\'e7a-feira");\par
+        break;\par
+    case 3:\par
+        console.log("Quarta-feira");\par
+        break;\par
+    // Outros casos\par
+    default:\par
+        console.log("Dia inv\'e1lido");\par
+\}\par
+Loops (La\'e7os de Repeti\'e7\'e3o)\par
+Loops s\'e3o usados para executar repetidamente um bloco de c\'f3digo.\par
+\par
+javascript\par
+// For loop\par
+for (let i = 0; i < 5; i++) \{\par
+    console.log(i);\par
+\}\par
+\par
+// While loop\par
+let j = 0;\par
+while (j < 5) \{\par
+    console.log(j);\par
+    j++;\par
+\}\par
+Arrays\par
+Arrays s\'e3o usados para armazenar m\'faltiplos valores em uma \'fanica vari\'e1vel.\par
+\par
+javascript\par
+const numeros = [1, 2, 3, 4, 5];\par
+\par
+// Acessando elementos do array\par
+console.log(numeros[0]); // 1\par
+\par
+// M\'e9todos de array\par
+numeros.push(6); // Adiciona um elemento no final\par
+numeros.pop();   // Remove o \'faltimo elemento\par
+Objetos\par
+Objetos s\'e3o cole\'e7\'f5es de pares chave-valor.\par
+\par
+javascript\par
+const pessoa = \{\par
+    nome: "Ana",\par
+    idade: 30,\par
+    cidade: "Rio de Janeiro"\par
+\};\par
+\par
+// Acessando propriedades do objeto\par
+console.log(pessoa.nome); // Ana\par
+\par
+// Adicionando uma nova propriedade\par
+pessoa.email = "ana@example.com";\par
+Manipula\'e7\'e3o do DOM (Document Object Model)\par
+O DOM permite que o JavaScript manipule e interaja com elementos HTML.\par
+\par
+javascript\par
+// Selecionando elementos\par
+const titulo = document.getElementById("titulo");\par
+const paragrafos = document.getElementsByTagName("p");\par
+\par
+// Alterando conte\'fado\par
+titulo.innerText = "Novo T\'edtulo";\par
+paragrafos[0].innerHTML = "Novo conte\'fado do par\'e1grafo.";\par
+\par
+// Adicionando eventos\par
+titulo.addEventListener("click", () => \{\par
+    alert("T\'edtulo clicado!");\par
+\});\par
+Manipula\'e7\'e3o de Eventos\par
+Eventos permitem que seu c\'f3digo responda a a\'e7\'f5es dos usu\'e1rios, como cliques ou teclas pressionadas.\par
+\par
+javascript\par
+const botao = document.getElementById("botao");\par
+\par
+botao.addEventListener("click", () => \{\par
+    alert("Bot\'e3o clicado!");\par
+\});\par
+Promises e Async/Await\par
+Promises e Async/Await s\'e3o usados para lidar com opera\'e7\'f5es ass\'edncronas, como chamadas a APIs.\par
+\par
+javascript\par
+// Promises\par
+const promise = new Promise((resolve, reject) => \{\par
+    setTimeout(() => \{\par
+        resolve("Sucesso!");\par
+    \}, 1000);\par
+\});\par
+\par
+promise.then(result => \{\par
+    console.log(result); // "Sucesso!"\par
+\}).catch(error => \{\par
+    console.error(error);\par
+\});\par
+\par
+// Async/Await\par
+async function fetchData() \{\par
+    try \{\par
+        const response = await fetch("https://api.example.com/data");\par
+        const data = await response.json();\par
+        console.log(data);\par
+    \} catch (error) \{\par
+        console.error("Erro ao buscar dados", error);\par
+    \}\par
+\}\par
+\par
+fetchData\par
+\cf0\highlight0\par
+\cf1\fs40 Nota\'e7\'e3o P\'f3s-fixa (Postfix Notation)\cf0\fs22\par
+A nota\'e7\'e3o p\'f3s-fixa pode ser avaliada facilmente usando uma pilha. Vamos ver um exemplo em JavaScript:\par
+\par
+javascript\par
+\cf2\highlight3 function avaliarExpressaoPosfixa(expressao) \{\par
+    const pilha = [];\par
+    expressao.split(" ").forEach(token => \{\par
+        if (!isNaN(token)) \{\par
+            pilha.push(parseFloat(token));\par
+        \} else \{\par
+            const b = pilha.pop();\par
+            const a = pilha.pop();\par
+            switch (token) \{\par
+                case '+':\par
+                    pilha.push(a + b);\par
+                    break;\par
+                case '-':\par
+                    pilha.push(a - b);\par
+                    break;\par
+                case '*':\par
+                    pilha.push(a * b);\par
+                    break;\par
+                case '/':\par
+                    pilha.push(a / b);\par
+                    break;\par
+            \}\par
+        \}\par
+    \});\par
+    return pilha.pop();\par
+\}\par
+const expressao = "3 4 + 2 *";\par
+console.log(avaliarExpressaoPosfixa(expressao)); \par
+\cf0\highlight0\par
+}
+ 

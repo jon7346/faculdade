@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function avaliarExpressaoPosfixa(expressao) {
+    const pilha = [];
+    expressao.split(" ").forEach(token => {
+        if (!isNaN(token)) {
+            pilha.push(parseFloat(token));
+        } else {
+            const b = pilha.pop();
+            const a = pilha.pop();
+            switch (token) {
+                case '+':
+                    pilha.push(a + b);
+                    break;
+                case '-':
+                    pilha.push(a - b);
+                    break;
+                case '*':
+                    pilha.push(a * b);
+                    break;
+                case '/':
+                    pilha.push(a / b);
+                    break;
+            }
+        }
+    });
+    return pilha.pop();
+}
+const expressao = "3 4 + 2 *";
+console.log(avaliarExpressaoPosfixa(expressao)); 
+
+    </script>
+</html>

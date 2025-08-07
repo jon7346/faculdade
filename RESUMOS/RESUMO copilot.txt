@@ -1,0 +1,11 @@
+Pilha (Stack)
+Uma pilha é uma estrutura de dados linear que segue o princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido. Operações básicas incluem:
+
+push: adiciona um elemento ao topo da pilha.
+
+pop: remove o elemento do topo da pilha.
+
+peek: retorna o elemento do topo sem removê-lo. As pilhas são usadas em várias aplicações, incluindo a gestão de chamadas de funções, expressão de avaliação e navegação em navegadores (histórico de páginas).
+
+Notação Pós-fixa (Postfix Notation)
+Também conhecida como Notação Polonesa Reversa (Reverse Polish Notation - RPN), a notação pós-fixa é uma forma de escrever expressões matemáticas sem necessidade de parênteses para definir a ordem das operações. Por exemplo, a expressão infixa "3 + 4" é escrita como "3 4 +" em notação pós-fixa. As operações são realizadas assim que são encontradas, o que facilita a avaliação das expressões usando uma pilha.
